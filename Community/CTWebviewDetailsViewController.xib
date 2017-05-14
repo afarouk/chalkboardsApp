@@ -1,0 +1,297 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9531" systemVersion="14F1713" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <mutableArray key="Lato-Bold.ttf">
+            <string>Lato-Bold</string>
+            <string>Lato-Bold</string>
+            <string>Lato-Bold</string>
+            <string>Lato-Bold</string>
+        </mutableArray>
+        <mutableArray key="Lato-Light.ttf">
+            <string>Lato-Light</string>
+            <string>Lato-Light</string>
+        </mutableArray>
+        <mutableArray key="Lato-Regular.ttf">
+            <string>Lato-Regular</string>
+        </mutableArray>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CTWebviewDetailsViewController">
+            <connections>
+                <outlet property="Img_PromoImg" destination="IfJ-5d-S5Y" id="WAy-bi-015"/>
+                <outlet property="Img_Selected" destination="z3t-uV-IR8" id="NCW-Gs-SYe"/>
+                <outlet property="LblMessage" destination="GbD-SC-NRt" id="TKN-pf-aC7"/>
+                <outlet property="LblSASLName" destination="3bX-Z2-VtM" id="vXR-lZ-wwx"/>
+                <outlet property="LblTitle" destination="drb-bn-Ddo" id="y0B-mP-YI2"/>
+                <outlet property="Lbl_Location" destination="vfc-IT-jWv" id="nkU-sE-sI1"/>
+                <outlet property="Lbl_PhoneNumber" destination="0Rf-Jp-bsP" id="Pw6-g5-Am8"/>
+                <outlet property="Lbl_PromoTitle" destination="cqS-JW-HYg" id="GSM-bb-in9"/>
+                <outlet property="Lbl_saslTitle" destination="KGm-r8-wOk" id="eiw-NA-Qml"/>
+                <outlet property="Scroll_Vw" destination="rbq-G5-FpX" id="qPZ-gI-ita"/>
+                <outlet property="btnCall" destination="OHS-En-tku" id="Qrv-Q1-mVl"/>
+                <outlet property="btnEmail" destination="Le5-uW-ZYb" id="zP4-O7-0SC"/>
+                <outlet property="btnHideToolBar" destination="cat-Yd-mvf" id="dCG-1c-0Vl"/>
+                <outlet property="btnInfoURL" destination="OqN-Sh-YQd" id="Ds7-3R-RCm"/>
+                <outlet property="btnPromotion" destination="s72-0L-1b9" id="5yZ-Vb-2fL"/>
+                <outlet property="btnSMS" destination="aLD-An-2dL" id="h6z-nZ-lii"/>
+                <outlet property="btnShareURL" destination="gPa-Xc-lKQ" id="lMe-Wh-0M1"/>
+                <outlet property="btnTwitter" destination="fZP-nX-vEe" id="401-2J-MoO"/>
+                <outlet property="btnfacebook" destination="4k7-jv-rI7" id="dd6-67-pyr"/>
+                <outlet property="leftView" destination="Sj8-LB-dNG" id="LCa-kj-ESI"/>
+                <outlet property="rightView" destination="y4R-4r-cwR" id="JLe-I2-7qx"/>
+                <outlet property="toolBarDetail" destination="zWY-15-JdJ" id="8oO-yJ-f6g"/>
+                <outlet property="view" destination="3q5-KC-Ehq" id="uD9-7x-YIi"/>
+                <outlet property="webViewDetail" destination="WgV-ed-leI" id="gcu-3c-arr"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="3q5-KC-Ehq">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <subviews>
+                <toolbar contentMode="scaleToFill" id="zWY-15-JdJ">
+                    <rect key="frame" x="0.0" y="524" width="320" height="44"/>
+                    <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                    <items/>
+                </toolbar>
+                <webView hidden="YES" contentMode="scaleToFill" id="WgV-ed-leI">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="524"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <gestureRecognizers/>
+                    <connections>
+                        <outlet property="delegate" destination="-1" id="Kci-b6-MrN"/>
+                    </connections>
+                </webView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="cat-Yd-mvf">
+                    <rect key="frame" x="2" y="524" width="110" height="44"/>
+                    <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <state key="normal">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="hideToolBarDetail:" destination="-1" eventType="touchUpInside" id="WUS-18-XjI"/>
+                    </connections>
+                </button>
+                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" id="rbq-G5-FpX">
+                    <rect key="frame" x="0.0" y="52" width="322" height="472"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="z3t-uV-IR8">
+                            <rect key="frame" x="0.0" y="52" width="322" height="211"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                        </imageView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="drb-bn-Ddo">
+                            <rect key="frame" x="37" y="362" width="249" height="28"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                            <fontDescription key="fontDescription" name="Lato-Bold" family="Lato" pointSize="15"/>
+                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="KGm-r8-wOk">
+                            <rect key="frame" x="37" y="400" width="249" height="35"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                            <fontDescription key="fontDescription" name="Lato-Regular" family="Lato" pointSize="13"/>
+                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="4k7-jv-rI7">
+                            <rect key="frame" x="37" y="247" width="40" height="40"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                            <state key="normal" backgroundImage="Facebook.png"/>
+                            <connections>
+                                <action selector="Fb_ButtonPressed:" destination="-1" eventType="touchUpInside" id="42D-Ec-C0m"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="fZP-nX-vEe">
+                            <rect key="frame" x="109" y="247" width="40" height="40"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                            <state key="normal" backgroundImage="Twitter.png"/>
+                            <connections>
+                                <action selector="Twitter_ButtonPressed:" destination="-1" eventType="touchUpInside" id="3Et-Qb-IwW"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="Le5-uW-ZYb">
+                            <rect key="frame" x="246" y="247" width="40" height="40"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                            <state key="normal" backgroundImage="Share-by-Email.png"/>
+                            <connections>
+                                <action selector="Email_ButtonPressed:" destination="-1" eventType="touchUpInside" id="PCk-oT-MRJ"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="aLD-An-2dL">
+                            <rect key="frame" x="177" y="247" width="40" height="40"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                            <state key="normal" backgroundImage="Share-by-Text-SMS.png"/>
+                            <connections>
+                                <action selector="SMS_ButtonPressed:" destination="-1" eventType="touchUpInside" id="dBR-bO-H7F"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="characterWrap" id="gPa-Xc-lKQ">
+                            <rect key="frame" x="37" y="844" width="249" height="38"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                            <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            <fontDescription key="fontDescription" name="Lato-Bold" family="Lato" pointSize="14"/>
+                            <state key="normal">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <connections>
+                                <action selector="MoreInfo_ButtonPressed:" destination="-1" eventType="touchUpInside" id="6mf-ls-RA1"/>
+                            </connections>
+                        </button>
+                        <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="characterWrap" id="OqN-Sh-YQd">
+                            <rect key="frame" x="37" y="545" width="249" height="38"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                            <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            <fontDescription key="fontDescription" name="Lato-Bold" family="Lato" pointSize="14"/>
+                            <state key="normal">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <connections>
+                                <action selector="MoreInfo_ButtonPressed:" destination="-1" eventType="touchUpInside" id="HPB-eV-LU3"/>
+                            </connections>
+                        </button>
+                        <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="s72-0L-1b9">
+                            <rect key="frame" x="0.0" y="310" width="322" height="33"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                            <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            <state key="normal" title="Create Promotion">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <connections>
+                                <action selector="Promotion_ButtonPressed:" destination="-1" eventType="touchUpInside" id="QgW-Yf-pIK"/>
+                            </connections>
+                        </button>
+                        <view contentMode="scaleToFill" id="Sj8-LB-dNG">
+                            <rect key="frame" x="15" y="744" width="292" height="70"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                            <subviews>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="OHS-En-tku">
+                                    <rect key="frame" x="0.0" y="2" width="290" height="68"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                    <connections>
+                                        <action selector="Call_ButtonPressed:" destination="-1" eventType="touchUpInside" id="oQE-Xg-4Z7"/>
+                                    </connections>
+                                </button>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Call" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="JcD-ka-5Fw">
+                                    <rect key="frame" x="22" y="10" width="205" height="21"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                    <fontDescription key="fontDescription" name="Lato-Light" family="Lato" pointSize="15"/>
+                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Call" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="0Rf-Jp-bsP">
+                                    <rect key="frame" x="22" y="38" width="205" height="21"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                    <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="15"/>
+                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Call.png" id="DfM-ei-67Z">
+                                    <rect key="frame" x="244" y="15" width="40" height="40"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                </imageView>
+                            </subviews>
+                        </view>
+                        <view contentMode="scaleToFill" id="y4R-4r-cwR">
+                            <rect key="frame" x="16" y="616" width="292" height="101"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                            <subviews>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Drive to" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="vfc-IT-jWv">
+                                    <rect key="frame" x="22" y="31" width="202" height="62"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                    <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="15"/>
+                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Drive to" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="SWX-Ku-zsJ">
+                                    <rect key="frame" x="22" y="1" width="203" height="21"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                    <fontDescription key="fontDescription" name="Lato-Light" family="Lato" pointSize="15"/>
+                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="oJI-IG-pmP">
+                                    <rect key="frame" x="8" y="17" width="284" height="68"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                    <connections>
+                                        <action selector="Drive_ButtonPressed:" destination="-1" eventType="touchUpInside" id="PIu-qY-jX0"/>
+                                    </connections>
+                                </button>
+                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Drive-To.png" id="mJp-Is-a58">
+                                    <rect key="frame" x="244" y="31" width="40" height="40"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                </imageView>
+                            </subviews>
+                        </view>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="GbD-SC-NRt">
+                            <rect key="frame" x="37" y="444" width="249" height="72"/>
+                            <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxX="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="cqS-JW-HYg">
+                            <rect key="frame" x="128" y="19" width="112" height="20"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <fontDescription key="fontDescription" name="Lato-Bold" family="Lato" pointSize="17"/>
+                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="IfJ-5d-S5Y">
+                            <rect key="frame" x="84" y="14" width="30" height="30"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        </imageView>
+                    </subviews>
+                </scrollView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="w19-8l-GIf">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="59"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                    <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="SASLName" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="3bX-Z2-VtM">
+                    <rect key="frame" x="0.0" y="19" width="320" height="21"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="TGc-Xu-3mR">
+                    <rect key="frame" x="8" y="8" width="60" height="44"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                    <state key="normal" image="backButton.png"/>
+                    <connections>
+                        <action selector="didTapBackButtonOnFavorites:" destination="-1" eventType="touchUpInside" id="jlV-HA-tMO"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="642-27-2Zw">
+                    <rect key="frame" x="2" y="0.0" width="318" height="59"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                    <connections>
+                        <action selector="didTapBackButtonOnFavorites:" destination="-1" eventType="touchUpInside" id="vd2-An-roI"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="143" y="-337"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="Call.png" width="100" height="100"/>
+        <image name="Drive-To.png" width="100" height="100"/>
+        <image name="Facebook.png" width="100" height="100"/>
+        <image name="Share-by-Email.png" width="100" height="100"/>
+        <image name="Share-by-Text-SMS.png" width="100" height="100"/>
+        <image name="Twitter.png" width="100" height="100"/>
+        <image name="backButton.png" width="120" height="88"/>
+    </resources>
+</document>

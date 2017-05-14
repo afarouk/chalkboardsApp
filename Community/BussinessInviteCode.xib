@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9531" systemVersion="14F1713" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="CTBusinessinvitatcodeView">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="gC1-MI-6Cw" customClass="TPKeyboardAvoidingScrollView">
+                    <rect key="frame" x="11" y="147" width="298" height="274"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Please Enter Business invitation code" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="l10-2Q-GiW">
+                            <rect key="frame" x="15" y="58" width="269" height="21"/>
+                            <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="t7P-H6-m7d">
+                            <rect key="frame" x="31" y="210" width="106" height="33"/>
+                            <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                            <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
+                            <state key="normal" title="Cancel">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <connections>
+                                <action selector="cancleBtnPressed:" destination="iN0-l3-epB" eventType="touchUpInside" id="9XK-hZ-Y78"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qfk-zr-Jzl">
+                            <rect key="frame" x="161" y="210" width="106" height="33"/>
+                            <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
+                            <state key="normal" title="Submit">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <connections>
+                                <action selector="submitBtnPressed:" destination="iN0-l3-epB" eventType="touchUpInside" id="ctl-uD-LFX"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Kp0-Qj-S0g" customClass="BVUnderlineButton">
+                            <rect key="frame" x="0.0" y="3" width="298" height="34"/>
+                            <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
+                            <state key="normal" title="Create Account">
+                                <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                        </button>
+                        <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="invition code" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="fSI-NV-hDX">
+                            <rect key="frame" x="31" y="149" width="236" height="30"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <textInputTraits key="textInputTraits" returnKeyType="done"/>
+                            <connections>
+                                <outlet property="delegate" destination="iN0-l3-epB" id="aX2-l4-KIS"/>
+                            </connections>
+                        </textField>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Invition Code" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8eS-mV-tkf">
+                            <rect key="frame" x="31" y="110" width="93" height="21"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                </scrollView>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.29999999999999999" colorSpace="calibratedWhite"/>
+            <connections>
+                <outlet property="btnCancel" destination="t7P-H6-m7d" id="SEa-Q0-Kam"/>
+                <outlet property="btnSubmit" destination="qfk-zr-Jzl" id="AAb-3P-hK2"/>
+                <outlet property="myView" destination="gC1-MI-6Cw" id="8vm-nN-pnE"/>
+                <outlet property="txt_Invitation" destination="fSI-NV-hDX" id="sY4-bs-h2X"/>
+            </connections>
+            <point key="canvasLocation" x="263" y="246"/>
+        </view>
+    </objects>
+</document>

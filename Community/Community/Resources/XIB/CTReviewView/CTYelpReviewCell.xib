@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="4514" systemVersion="12F37" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none">
+    <dependencies>
+        <deployment defaultVersion="1536" identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3747"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="YelpReviewCell" rowHeight="62" id="DDA-OL-G4J" customClass="CTYelpReviewCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="63"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="DDA-OL-G4J" id="P8r-QE-LyT">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="62"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="fg1-h6-R8u">
+                        <rect key="frame" x="139" y="8" width="145" height="21"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="pSV-wz-hht">
+                        <rect key="frame" x="15" y="37" width="294" height="17"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="grey_star.png" id="tYu-dy-pof">
+                        <rect key="frame" x="15" y="8" width="20" height="20"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    </imageView>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="grey_star.png" id="rdd-fB-qMx">
+                        <rect key="frame" x="39" y="8" width="20" height="20"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    </imageView>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="grey_star.png" id="q5W-0W-qr3">
+                        <rect key="frame" x="63" y="8" width="20" height="20"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    </imageView>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="grey_star.png" id="oLJ-3p-317">
+                        <rect key="frame" x="87" y="8" width="20" height="20"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    </imageView>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="grey_star.png" id="J0i-Dx-H1j">
+                        <rect key="frame" x="111" y="8" width="20" height="20"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    </imageView>
+                    <view contentMode="scaleToFill" id="h0D-5f-pAv">
+                        <rect key="frame" x="0.0" y="61" width="320" height="1"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                        <color key="backgroundColor" white="0.33333333333333331" alpha="0.10000000000000001" colorSpace="calibratedWhite"/>
+                    </view>
+                </subviews>
+                <color key="backgroundColor" red="0.98039215686274506" green="0.98039215686274506" blue="0.98039215686274506" alpha="1" colorSpace="calibratedRGB"/>
+            </tableViewCellContentView>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <connections>
+                <outlet property="nameLbl" destination="fg1-h6-R8u" id="Xe0-tY-17W"/>
+                <outlet property="reviewTxt" destination="pSV-wz-hht" id="EHb-OP-RBA"/>
+                <outletCollection property="ratingImageViews" destination="tYu-dy-pof" id="x4G-Bh-sBC"/>
+                <outletCollection property="ratingImageViews" destination="rdd-fB-qMx" id="Mzj-Q3-g80"/>
+                <outletCollection property="ratingImageViews" destination="q5W-0W-qr3" id="6r5-nR-WAw"/>
+                <outletCollection property="ratingImageViews" destination="oLJ-3p-317" id="ex7-PK-ilo"/>
+                <outletCollection property="ratingImageViews" destination="J0i-Dx-H1j" id="TYz-gz-kva"/>
+            </connections>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="grey_star.png" width="32" height="32"/>
+    </resources>
+</document>

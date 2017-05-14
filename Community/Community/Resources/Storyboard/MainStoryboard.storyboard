@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6250" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" variant="6xAndEarlier" propertyAccessControl="none" initialViewController="6V9-5G-dWi">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6244"/>
+    </dependencies>
+    <scenes>
+        <!--Parent View Controller-->
+        <scene sceneID="jvw-it-ubn">
+            <objects>
+                <viewController storyboardIdentifier="CTRootViewController" id="6V9-5G-dWi" customClass="CTParentViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="JQ5-Oq-2jb">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="USP-eb-eie"/>
+                    <nil key="simulatedStatusBarMetrics"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="D39-FC-0SA" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="341" y="-444"/>
+        </scene>
+        <!--Message View Controller-->
+        <scene sceneID="xyw-K6-SLk">
+            <objects>
+                <viewController storyboardIdentifier="CTMessageViewController" id="ENw-VO-DbA" customClass="CTMessageViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="fII-nc-Zc9">
+                        <rect key="frame" x="0.0" y="20" width="320" height="548"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" userInteractionEnabled="NO" contentMode="scaleToFill" id="FMf-9j-Eyb">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="50"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <connections>
+                        <outlet property="serverMessageSizetxtView" destination="FMf-9j-Eyb" id="9af-pD-9GE"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="5Ah-ZX-cx3" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="781" y="-419"/>
+        </scene>
+        <!--Restaurant Home View Controller-->
+        <scene sceneID="ahz-NT-vCv">
+            <objects>
+                <viewController storyboardIdentifier="CTRestaurantHomeViewController" id="62n-vP-7cC" customClass="CTRestaurantHomeViewController" sceneMemberID="viewController">
+                    <view key="view" autoresizesSubviews="NO" contentMode="scaleToFill" id="sIY-CS-13f">
+                        <rect key="frame" x="0.0" y="20" width="320" height="548"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" id="Y5l-zI-ugb">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="100"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxX="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <webView contentMode="scaleToFill" id="jIh-YS-Nqb">
+                                <rect key="frame" x="0.0" y="110" width="320" height="110"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxX="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            </webView>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="Ayl-tf-idr">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="548"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="62n-vP-7cC" id="Q9G-et-qhw"/>
+                                    <outlet property="delegate" destination="62n-vP-7cC" id="kZC-4R-g4M"/>
+                                </connections>
+                            </tableView>
+                            <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="MapViewMask.png" id="eM7-At-4sK">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="548"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxX="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <connections>
+                        <outlet property="galleryTableView" destination="Ayl-tf-idr" id="itK-Za-4ug"/>
+                        <outlet property="hintMaskView" destination="eM7-At-4sK" id="2Qk-Ys-vK5"/>
+                        <outlet property="messageTxtWebView" destination="jIh-YS-Nqb" id="Rxq-H8-hk5"/>
+                        <outlet property="titleTextView" destination="Y5l-zI-ugb" id="SB8-F9-ZJ5"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Cdr-ee-7NX" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="12" y="345"/>
+        </scene>
+        <!--Out Of Network View Controller-->
+        <scene sceneID="cKX-26-YHs">
+            <objects>
+                <viewController storyboardIdentifier="CTOutOfNetworkViewController" id="cYb-7J-g2L" customClass="CTOutOfNetworkViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5vV-Ht-4pR">
+                        <rect key="frame" x="0.0" y="20" width="320" height="548"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="d8j-Ju-RsO">
+                                <rect key="frame" x="20" y="35" width="280" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" userInteractionEnabled="NO" contentMode="scaleToFill" editable="NO" id="4hw-Lb-KBt">
+                                <rect key="frame" x="20" y="69" width="280" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="iVJ-M2-Xtw">
+                                <rect key="frame" x="20" y="214" width="280" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <connections>
+                        <outlet property="restaurantAddressLbl" destination="4hw-Lb-KBt" id="NwB-Q4-Txs"/>
+                        <outlet property="restaurantNameLbl" destination="d8j-Ju-RsO" id="Wrg-nV-Kp8"/>
+                        <outlet property="telephoneLbl" destination="iVJ-M2-Xtw" id="kcL-R1-t2U"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="7fb-3X-BNs" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="421" y="293"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="MapViewMask.png" width="320" height="480"/>
+    </resources>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4"/>
+    </simulatedMetricsContainer>
+</document>
